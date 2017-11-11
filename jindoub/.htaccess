@@ -1,0 +1,10 @@
+ErrorDocument 404 /statics/404.html
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^xiaojindou123.com [NC]
+RewriteRule ^(.*)$ http://www.xiaojindou123.com/$1 [L,R=301]
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^xiaojindou123.com [NC]
+RewriteRule ^(.*)$ http://www.xiaojindou123.com/$1 [L,R=301]
+</IfModule>
